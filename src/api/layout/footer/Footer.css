@@ -1,0 +1,40 @@
+footer {
+    background-color: #1a9748;
+    height: 5%;
+    width: 100%; /* Asegurarse de que el footer ocupe todo el ancho */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    bottom: 0; /* Asegurarse de que el footer se quede en el fondo */
+    left: 0; /* Asegurarse de que el footer esté alineado horizontalmente */
+    border-top: 3px solid #126530;
+  }
+  *{
+    box-sizing: border-box;
+  }
+
+  .main-content {
+    padding-bottom: 50px; /* Igual a la altura de tu footer */
+    overflow-y: auto; /* Esto permitirá el desplazamiento dentro del contenido principal si es necesario */
+    max-height: calc(100vh - 10vh - 50px); /* Ajustar basado en la altura de tu header y footer */
+  }
+
+  @media (max-width: 600px) {
+    footer {
+        background-color: #1a9748;
+        height: 0%;
+        width: 100%; /* Asegurarse de que el footer ocupe todo el ancho */
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        position: relative;
+        bottom: 0; /* Asegurarse de que el footer se quede en el fondo */
+        left: 0; /* Asegurarse de que el footer esté alineado horizontalmente */
+      }
+      *{
+        box-sizing: border-box;
+      }
+    
+      .main-content {
+        padding-bottom: 50px; /* Igual a la altura de tu footer */
+        overflow-y: auto; /* Esto permitirá el desplazamiento dentro del contenido principal si es necesario */
+        max-height: calc(100vh - 10vh - 50px); /* Ajustar basado en la altura de tu header y footer */
+  }
+}

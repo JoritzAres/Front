@@ -1,0 +1,200 @@
+#header {
+  height: 5vh;
+  padding-top: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; /* Usar 100% en lugar de 90% para evitar el desplazamiento horizontal */
+  box-sizing: border-box; /* Asegurarse de que el padding no aumente el ancho */
+  position:absolute;
+  left:0;
+  top:0;
+  margin-top: 1%;
+}
+
+#header img {
+  height: 10%;
+  max-height: 100%;
+  width: 20%;
+  margin-top: 4%;
+  margin-left: -70%;
+  margin-top: 10%;
+  font-family: Arial, Helvetica, sans-serif; /* Ajustar el ancho automáticamente basado en la altura */
+}
+*{
+  box-sizing: border-box;
+}
+
+#header b {
+  font-size: 1.8vw;
+  margin-right: 20px;
+}
+@media (max-width: 1366px) {
+
+  #header {
+    height: 5vh;
+    padding-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Usar 100% en lugar de 90% para evitar el desplazamiento horizontal */
+    box-sizing: border-box; /* Asegurarse de que el padding no aumente el ancho */
+    position:absolute;
+    left:0;
+    top:0;
+    margin-top: 1%;
+  }
+  
+  #header img {
+    height: auto;
+    max-height: 100%;
+    width: auto; /* Ajustar el ancho automáticamente basado en la altura */
+  }
+  *{
+    box-sizing: border-box;
+  }  
+  .logo_cegasa {
+    margin-top: 4%;
+    margin-left: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #header b {
+    font-size: 1.8vw;
+    margin-right: 20px;
+  }
+
+}
+
+@media (max-width: 1100px){
+
+  #header {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Usar 100% en lugar de 90% para evitar el desplazamiento horizontal */
+    box-sizing: border-box; /* Asegurarse de que el padding no aumente el ancho */
+    position:relative;
+  }
+  #header img {
+    height: auto;
+    max-height: 100%;
+    width: auto; /* Ajustar el ancho automáticamente basado en la altura */
+  }
+  *{
+    box-sizing: border-box;
+  }
+  .logo_cegasa {
+    margin-top: 4%;
+    margin-left: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #header b {
+    font-size: 1.8vw;
+    margin-right: 20px;
+  }
+  
+
+
+  #header {
+    flex-direction: column;
+    padding: 10px;
+    height: auto; /* Ajustar la altura automáticamente */
+  }
+
+  .logo_kelvin{
+    transform: scale(0.7);
+  }
+
+  .logo_oreka,
+  .logo_cegasa,
+  #header b {
+    width: 100%; /* Permite que los elementos llenen el ancho disponible */
+    padding-right: 5%;
+  }
+
+  .logo_cegasa{
+    padding: 0;
+    margin:0;
+  }
+  #header b {
+    font-size: 3.5vw;
+  }
+  #header{
+    padding : 0;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  #header {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Usar 100% en lugar de 90% para evitar el desplazamiento horizontal */
+    box-sizing: border-box; /* Asegurarse de que el padding no aumente el ancho */
+    position:relative;
+  }
+  #header img {
+    height: auto;
+    max-height: 100%;
+    width: auto; /* Ajustar el ancho automáticamente basado en la altura */
+  }
+  *{
+    box-sizing: border-box;
+  }
+  .logo_oreka {
+    width: auto; /* Ajustar el ancho automáticamente */
+    max-width: 15vw; /* Max width to ensure it doesn't get too big */
+    height: auto; /* Ajustar la altura automáticamente */
+    margin-right: 2vw;
+    margin-top: 5px;
+    padding-top: 25px;
+    order: 2;
+  }
+  
+  .logo_cegasa {
+    margin-top: 4%;
+    margin-left: 2%;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  #header b {
+    font-size: 1.8vw;
+    margin-right: 20px;
+  }
+  
+
+
+  #header {
+    flex-direction: column;
+    padding: 10px;
+    height: auto; /* Ajustar la altura automáticamente */
+  }
+
+  .logo_kelvin{
+    transform: scale(0.7);
+  }
+
+  .logo_oreka,
+  .logo_cegasa,
+  #header b {
+    width: 100%; /* Permite que los elementos llenen el ancho disponible */
+    padding-right: 5%;
+  }
+
+  .logo_cegasa{
+    padding: 0;
+    margin:0;
+  }
+  #header b {
+    font-size: 3.5vw;
+  }
+  #header{
+    padding : 0;
+  }
+}

@@ -1,0 +1,364 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  width: 100vw;
+  overflow-x: hidden; /* Previene desplazamiento horizontal */
+}
+*{
+  box-sizing: border-box;
+}
+
+
+.login-form,
+.login-form-2 {
+  border-radius: 100px;
+  padding: 25px; /* padding uniforme */
+  width: 80vw; /* Ajustado para dar espacio a los bordes en pantallas pequeñas */
+  max-width: 420px; /* Mantiene el formulario de un tamaño manejable en pantallas grandes */
+  margin: 5% auto; /* Centra el formulario y proporciona espacio en la parte superior */
+  text-align: center;
+  position: relative; /* Posición relativa para posicionar absolutamente los botones dentro */
+  margin-bottom: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.modal{
+  position: absolute;
+  margin: auto;
+}
+  /* Estilo de la ventana de error */
+  .modal-content {
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(18, 135, 43, 0.74);
+    max-width: 90%;
+    text-align: center;
+    margin:auto;
+  }
+
+  .close {
+    position: absolute;
+    font-size: 200%;
+    cursor: pointer;
+    color:#1a9748;
+    top: 0;
+    right: -3%;
+    width: 35%;
+    height: 60%;
+    border: solid 0px black;
+  }
+
+::placeholder{
+  text-align: center;
+}
+.centrar-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.captured-image {
+  height: auto;
+  width: 90vw;
+}
+
+#Unidades{
+  margin-top: 53%;
+}
+
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.label-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.css-109w1ol-MuiFormLabel-root-MuiInputLabel-root.Mui-focused{
+  margin-left: 50%;
+}
+
+.MuiFormLabel-root.MuiInputLabel-root {
+  margin-Left: 25%; 
+  display: flex;
+  justify-Content: center; 
+  align-Items: center;
+}
+
+/* Asegúrate de que estos estilos se apliquen en todos los estados relevantes */
+.Mui-focused .MuiFormLabel-root.MuiInputLabel-root,
+.MuiFormLabel-root.MuiInputLabel-root {
+  text-align: center;
+}
+
+
+#Grabar,
+#cameraInput,
+#Camara,
+#Camara-2,
+#Upload {
+  background-color: #1a9748;
+  border: none; /* Elimina el borde para que los botones se vean más limpios */
+  color: white; /* Para el texto del botón */
+  font-weight: bold;
+  padding: 3%; /* Espacio suficiente para tocar */
+  margin: 2%; /* Separación entre botones */
+  margin-top: 3%;
+  width:100% /* 100% del padre - padding para que no se desborde */
+}
+.login-background {
+  position: absolute;
+  top: 50%; /* Centra verticalmente */
+  left: 50%; /* Centra horizontalmente */
+  transform: translate(-50%, -50%); /* Ajusta el centrado */
+  background-image: url('./img/Logo.png'); /* Ajusta la ruta según sea necesario */
+  background-size: contain; /* Asegura que el logo se ajuste al contenedor sin repetirse */
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.1; /* Ajusta esto según la opacidad que desees */
+  z-index: -1;
+  /* Define un tamaño específico para el logo si es necesario */
+  width: 800px; /* Ajusta el ancho deseado */
+  height: 800px; /* Ajusta la altura deseada */
+}
+
+.login-form-container {
+  position: relative; /* Asegura que el formulario se posicione correctamente sobre el fondo */
+  z-index: 2; /* Asegura que el formulario se muestre encima del fondo */
+}
+#Camara
+
+.button-container {
+  width: 100%; /* Toma el ancho completo del contenedor padre */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra los botones horizontalmente */
+  margin-top: auto; /* Empuja el contenedor de botones hacia abajo */
+  align-items: center; /* Centra los botones verticalmente */
+  gap:10px
+}
+
+.button-container-inventario button{
+  background-color: #1a9748;
+  width: 20%;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 0;
+  width: calc(50% - 10px); /* Ajusta según sea necesario */
+}
+.button-container button {
+  background-color: #1a9748;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 0;
+  width: calc(50% - 10px); /* Ajusta según sea necesario */
+}
+
+.common-btn {
+  background-color: #84004F;
+  border: none;
+  color: white;
+  padding: 10px 20px; /* Adjust padding as needed */
+  margin: 10px; /* Adjust margin as needed */
+  font-size: 1em; /* Adjust font size as needed */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  text-align: center;
+  display: block; /* Change to inline-block if you prefer */
+  width: 80%; /* Adjust width as needed, or use max-width for limits */
+  max-width: 250px; /* Adjust max-width as needed */
+}
+
+.css-109w1ol-MuiFormLabel-root-MuiInputLabel-root{
+  transform-origin:center !important;
+  color: #10582a !important;
+  font-weight: bold !important;
+
+}
+
+
+.css-biotix-MuiInputBase-root-MuiInput-root:after{
+  border-bottom: 2px solid #1a9748 !important;
+  color :#137236;
+  
+}
+
+/* Media Queries */
+@media (max-width: 1100px) {
+
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    width: 100vw;
+    overflow-x: hidden; /* Previene desplazamiento horizontal */
+  }
+  *{
+    box-sizing: border-box;
+  }
+.modal{
+  position: absolute;
+  margin: auto;
+}
+  /* Estilos de ventana emergente */
+  .modal-content {
+    background-color: #eee;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(18, 135, 43, 0.74);
+    max-width: 90%;
+    text-align: center;
+    margin:auto;
+  }
+
+  .close {
+    position: absolute;
+    font-size: 200%;
+    cursor: pointer;
+    color:#1a9748;
+    top: 0;
+    right: -3%;
+    width: 35%;
+    height: 60%;
+    border: solid 0px black;
+  }
+  
+  .login-form,
+  .login-form-2 {
+    border-radius: 100px;
+    border: 15px solid #1a9748;
+    padding: 25px; /* padding uniforme */
+    width: 80vw; /* Ajustado para dar espacio a los bordes en pantallas pequeñas */
+    max-width: 400px; /* Mantiene el formulario de un tamaño manejable en pantallas grandes */
+    margin: 5% auto; /* Centra el formulario y proporciona espacio en la parte superior */
+    text-align: center;
+    position: relative; /* Posición relativa para posicionar absolutamente los botones dentro */
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .login-form-modifier{
+    border-radius: 100px;
+    border: 15px solid #1a9748;
+    padding: 25px; /* padding uniforme */
+    width: 80vw; /* Ajustado para dar espacio a los bordes en pantallas pequeñas */
+    max-width: 200px; /* Mantiene el formulario de un tamaño manejable en pantallas grandes */
+    margin: 5% auto; /* Centra el formulario y proporciona espacio en la parte superior */
+    text-align: center;
+    position: relative; /* Posición relativa para posicionar absolutamente los botones dentro */
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .centrar-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .captured-image {
+    height: auto;
+    width: 90vw;
+  }
+  
+  .visible {
+    display: block;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  #Grabar,
+  #cameraInput,
+  #Camara,
+  #Camara-2,
+  #Upload {
+    background-color: #1a9748;
+    border: none; /* Elimina el borde para que los botones se vean más limpios */
+    color: white; /* Para el texto del botón */
+    padding: 3%; /* Espacio suficiente para tocar */
+    margin: 2%; /* Separación entre botones */
+    margin-top: 3%;
+    width:900% /* 100% del padre - padding para que no se desborde */
+  }
+
+  #Camara
+  
+  .button-container {
+    width: 100%; /* Toma el ancho completo del contenedor padre */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centra los botones horizontalmente */
+    margin-top: auto; /* Empuja el contenedor de botones hacia abajo */
+    align-items: center; /* Centra los botones verticalmente */
+    gap:10px
+  }
+
+  .login-form, .login-form-2{
+    border: none;
+    width: auto;
+    margin: auto;
+    margin-top: 0;
+    padding: 0;
+  }
+  
+  .input-container > *{
+    margin: 0 !important;
+  }
+  .input-Inventario> *{
+    margin-top: "2%";
+  }
+  .button-container_inventario{
+    margin-top: "5%";
+  }
+  .captured-image {
+    width: 100%; /* Asegura la responsividad */
+  }
+
+  #Unidades{
+    margin-top: 12% !important;
+  }
+
+  .css-109w1ol-MuiFormLabel-root-MuiInputLabel-root{
+    transform-origin:center !important;
+    color: #10582a !important;
+    font-weight: bold !important;
+
+  }
+
+  
+  .css-biotix-MuiInputBase-root-MuiInput-root:after{
+    border-bottom: 2px solid #1a9748 !important;
+    color :#137236;
+    
+  }
+}
+
+
+
+/* TAMAÑO TABLET */
+
+@media (min-width: 900px) {
+  .login-form-2 {
+    max-width: 500px; /* Ajusta el ancho máximo para evitar desbordamientos */
+  }
+}
+  
