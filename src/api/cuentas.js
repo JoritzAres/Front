@@ -1,6 +1,6 @@
 import { config } from '../config';
 
-const base_url = `https://${config.server}:${config.server_port}/cuentas`;
+const base_url = `${config.server}/cuentas`;
 
 // Funciones para transacciones
 

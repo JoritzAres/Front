@@ -1,6 +1,6 @@
 import { config } from '../config';
 
-const base_url = `https://${config.server}:${config.server_port}/contactos`;
+const base_url = `${config.server}/contactos`;
 
 export async function CrearContacto(contacto) {
     const url = `${base_url}/CrearContacto`;

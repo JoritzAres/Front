@@ -1,6 +1,6 @@
 import { config } from '../config';
 
-const base_url = `https://${config.server}:${config.server_port}/eventos`;
+const base_url = `${config.server}/eventos`;
 
 export async function CrearEvento(evento) {
     const url = `${base_url}/CrearEvento`;
