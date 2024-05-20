@@ -1,6 +1,6 @@
 import { config } from '../config';
 
-const base_url = `https://${config.server}:${config.server_port}/Login`;
+const base_url = `${config.server}:${config.server_port}/Login`;
 
 
 export async function LoginUsuario(datos) {
