@@ -1,7 +1,7 @@
 import { config } from '../config';
 
-// const base_url = `${config.server}/inventario`;
-const base_url = `http://${config.server}:${config.server_port}/inventario`;
+const base_url = `${config.server}/inventario`;
+// const base_url = `http://${config.server}:${config.server_port}/inventario`;
 
 export async function CrearInventario(inventario) {
     const url = `${base_url}/CrearInventario`;
